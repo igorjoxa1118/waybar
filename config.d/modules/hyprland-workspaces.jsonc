@@ -1,0 +1,28 @@
+{
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "active-only": false,
+    "all-outputs": true,
+    "enable-bar-scroll": true,
+    "persistent_workspaces": {
+      "eDP-1": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    },
+    "format": "<span font_size='14pt'>{icon}</span>",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "10": ""
+    },
+    "on-scroll-up": "hyprctl dispatch workspace r-1",
+    "on-scroll-down": "hyprctl dispatch workspace r+1",
+    "on-click": "activate",
+    "sort-by-number": true
+  }
+}

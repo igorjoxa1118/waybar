@@ -1,0 +1,8 @@
+{
+	"backlight": {
+		"interval": 5,
+		"format": "<span font_size='12pt' color='#89b4fa'> <b>SUN</b></span> {percent}%",
+		"on-scroll-up": "brightnessctl -c backlight set +5%",
+		"on-scroll-down": "brightnessctl -c backlight set 5%-"
+	},
+}

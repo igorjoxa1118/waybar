@@ -1,0 +1,10 @@
+{
+"custom/hyprshade": {
+  "format": "{}",
+  "exec": "~/.config/hypr/src/hyprshade_status.sh",
+  "exec-if": "which hyprshade",
+  "interval": 1,
+  "on-click": "hyprshade toggle blue-light-filter",
+  "tooltip-format": "{}"
+},
+}

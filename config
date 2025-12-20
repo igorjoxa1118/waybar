@@ -1,0 +1,49 @@
+[
+  {
+    "include": "~/.config/waybar/config.d/bars/bar-1.jsonc",
+    "height": 55,
+    "position": "top",
+    "output": "eDP-1",
+    "mode": "dock",
+    "exclusive": true,
+    "pass-through": false,
+    "margin-top": 0,    /* Отступ сверху */
+    "margin-left": 0,   /* Отступ слева */
+    "margin-right": 0,  /* Отступ справа */
+    "margin-bottom": 0,
+    "class": "top-bar"
+  },
+  {
+    "include": "~/.config/waybar/config.d/bars/bar-2.jsonc",
+    "height": 55,
+    "position": "bottom",
+    "output": "eDP-1",
+    "mode": "dock",
+    "exclusive": true,
+    "pass-through": false,
+    "margin-top": 0,
+    "margin-left": 0,   /* Отступ слева */
+    "margin-right": 0,  /* Отступ справа */
+    "margin-bottom": 0, /* Отступ снизу */
+    "class": "bottom-bar"
+  } /* Если будешь использовать панель 3, то поставь тут запятую и раскомментируй строки ниже */
+    /*{
+    "include": "~/.config/waybar/config.d/bars/bar-3.jsonc",
+    "output": "eDP-1",
+    "mode": "hide",
+    "name": "right-bar",
+    "class": "right-bar",
+    "position": "right",
+    "layer": "top",
+    "modifier-reset": "press",
+    "show-on-click": true,
+    "height": 1,
+    "width": 55,
+    "exclusive": false,
+    "pass-through": false,
+    "margin-top": 220,  
+    "margin-left": 0,
+    "margin-right": 0,
+    "margin-bottom": 220,
+  },*/
+]

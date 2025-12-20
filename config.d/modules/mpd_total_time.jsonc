@@ -1,0 +1,14 @@
+{
+    "custom/mpd_total_time": {
+        "exec": "~/.config/waybar/src/mpd_total_time.sh",
+        "exec-if": "which mpc",
+        "return-type": "json",
+        "format": "{}",
+        "interval": 1,
+        "tooltip": true,
+        "on-click": "mpc toggle",
+        "on-click-right": "mpc stop",
+        "on-scroll-up": "mpc volume +5",
+        "on-scroll-down": "mpc volume -5"
+    }
+}

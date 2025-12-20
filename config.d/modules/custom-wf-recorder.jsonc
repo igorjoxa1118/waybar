@@ -1,0 +1,10 @@
+{
+    "custom/wf-recorder": {
+        "format": "{}",
+        "interval": "once",
+        "exec": "echo ''",
+        "exec-if": "which wf-recorder",  // Проверяем установку, а не процесс
+        "on-click": "exec $HOME/.config/hypr/scripts/rofi/recording",
+        "signal": 8
+    }
+}

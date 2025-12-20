@@ -1,0 +1,14 @@
+{
+    "custom/mpd_back_time": {
+        "exec": "~/.config/waybar/src/mpd_back_time.sh",
+        "exec-if": "which mpc",
+        "return-type": "json",
+        "format": "{}",
+        "interval": 1,
+        "tooltip": false,
+        "on-click": "mpc toggle",
+        "on-click-right": "mpc stop",
+        "on-scroll-up": "mpc next",
+        "on-scroll-down": "mpc prev"
+    },
+}

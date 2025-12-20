@@ -1,0 +1,13 @@
+{
+"clock": {
+  "format": "<span font_size='14pt' color='#89b4fa'> </span>{:%H:%M}",
+  "format-alt": " {:%A, %B %d, %Y (%R)}",
+  "tooltip": false
+},
+"custom/rofi-calendar": {
+    "format": "<span font_size='14pt' color='#89b4fa'></span>",
+    "exec": "date '+%a %d %b'",
+    "on-click": "~/.config/i3/src/rofi-calendar/bin/calendar",
+    "tooltip": false
+},
+}

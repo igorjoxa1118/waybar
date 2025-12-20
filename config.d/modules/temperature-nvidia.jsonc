@@ -1,0 +1,14 @@
+{
+    "custom/gpu-usage": {
+        "exec": "nvidia-smi --query-gpu=utilization.gpu,temperature.gpu --format=csv,nounits,noheader | awk -F', ' '{print $1\"%\"}'",
+        "exec-if": "which nvidia-smi",
+        "format": "<span font_size='12pt' color='#f5c2e7'><b>GPU </b></span>{}",
+        "interval": 2
+    },
+    "custom/gpu-temp": {
+        "exec": "nvidia-smi --query-gpu=utilization.gpu,temperature.gpu --format=csv,nounits,noheader | awk -F', ' '{print $2\"°C\"}'",
+        "exec-if": "which nvidia-smi",
+        "format": "<span font_size='12pt' color='#f2cdcd'><b>GPU </b></span>{}",
+        "interval": 2
+    },
+}

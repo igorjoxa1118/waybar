@@ -1,0 +1,14 @@
+{
+    "custom/separator": {
+    "format": "/",
+    "interval": "once",
+    "tooltip": false,
+    "icon": true
+},
+    "custom/separator2": {
+    "format": "⎪",
+    "interval": "once",
+    "tooltip": false,
+    "icon": true
+},
+}

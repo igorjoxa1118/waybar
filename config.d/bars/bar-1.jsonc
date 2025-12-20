@@ -1,0 +1,70 @@
+{
+  "include": [
+    /*Left modules*/
+    "~/.config/waybar/config.d/modules/custom-launcher.jsonc",
+    "~/.config/waybar/config.d/modules/separator.jsonc",
+    "~/.config/waybar/config.d/modules/cpu.jsonc",
+    "~/.config/waybar/config.d/modules/memory.jsonc",
+    "~/.config/waybar/config.d/modules/temperature-nvidia.jsonc",
+    "~/.config/waybar/config.d/modules/custom-updates.jsonc",
+    "~/.config/waybar/config.d/modules/diskusage.jsonc",
+    "~/.config/waybar/config.d/modules/vpn-status.jsonc",
+    "~/.config/waybar/config.d/modules/swap.jsonc",
+    /*Center modules*/
+    "~/.config/waybar/config.d/modules/pipewire-volume.jsonc",
+    "~/.config/waybar/config.d/modules/pulseaudio.jsonc",
+    "~/.config/waybar/config.d/modules/custom-cava.jsonc",
+    "~/.config/waybar/config.d/modules/backlight.jsonc",
+    /*Right modules*/
+    "~/.config/waybar/config.d/modules/network.jsonc",
+    "~/.config/waybar/config.d/modules/net-speed.jsonc",
+    "~/.config/waybar/config.d/modules/hyprshade.jsonc",
+    "~/.config/waybar/config.d/modules/battery.jsonc",
+    "~/.config/waybar/config.d/modules/hyprland-language.jsonc",
+    "~/.config/waybar/config.d/modules/tray.jsonc",
+    "~/.config/waybar/config.d/modules/clock.jsonc",
+    "~/.config/waybar/config.d/modules/custom-power.jsonc"
+  ],
+  "modules-left": [
+    "custom/launcher",
+    "custom/separator2",
+    "cpu",
+    "custom/separator2",
+    "custom/gpu-temp",
+    "custom/separator2",
+    "custom/gpu-usage",
+    "custom/separator2",
+    "memory",
+    "custom/separator2",
+    "custom/diskusage",
+    "custom/separator2",
+    "custom/updates_icon",
+    "custom/updates_count",
+    "custom/separator2",
+    "custom/swap"
+  ],
+  "modules-center": [
+    "pulseaudio",
+    "custom/separator2",
+    "custom/cava",
+    "custom/separator2",
+    "backlight"
+  ],
+  "modules-right": [
+    "network",
+    "custom/separator2",
+    "custom/netspeed",
+    "custom/separator2",
+    "hyprland/language",
+    "custom/separator2",
+    "custom/hyprshade",
+    "battery",
+    "custom/separator2",
+    "tray",
+    "custom/separator2",
+    "custom/rofi-calendar",
+    "clock",
+    "custom/separator2",
+    "custom/power"
+  ]
+}

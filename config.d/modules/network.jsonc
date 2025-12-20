@@ -1,0 +1,14 @@
+{
+"network": {
+  "on-click": "nm-connection-editor",
+  "exec-if": "which nm-connection-editor",  // Проверяем наличие
+  // "interface": "wlp2s0", // (Optional) To force the use of this interface
+  "format": "<span font_size='12pt' color='#f9e2af'><b>NET</b></span>Disabled",
+  "format-wifi": "<span font_size='12pt' color='#fab387'><b>NET</b> </span>{essid}",
+  // "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
+  "format-ethernet": "<span font_size='12pt' color='#a6e3a1'> <b>NET</b> </span>Wired",
+  "format-disconnected": "<span font_size='12pt' color='#94e2d5'> <b>NET</b> </span>Disconnected",
+  // "on-click": "kitty -e nmtui"
+  "on-click": "nm-connection-editor"
+},
+}

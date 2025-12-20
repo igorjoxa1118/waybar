@@ -1,0 +1,11 @@
+{
+  "pulseaudio": {
+    "scroll-step": 1,
+    "format": "<span font_size='12pt' color='#89b4fa'><b>VOL</b></span> {volume}%",
+    "format-bluetooth": "<span font_size='12pt' color='#89b4fa'><b>VOL</b></span> {volume}%",
+    "format-muted": "   muted",
+    "on-click": "pavucontrol",
+    "on-scroll-up": "pamixer -ui 2 && pamixer --get-volume > $SWAYSOCK.wob",
+    "on-scroll-down": "pamixer -ud 2 && pamixer --get-volume > $SWAYSOCK.wob"
+  },
+}

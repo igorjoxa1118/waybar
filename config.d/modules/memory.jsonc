@@ -1,0 +1,6 @@
+{
+  "memory": {
+  "format": "<span font_size='12pt' color='#cba6f7'><b>RAM</b></span>{: >3}%",
+  "on-click": "kitty -e htop"
+},
+}

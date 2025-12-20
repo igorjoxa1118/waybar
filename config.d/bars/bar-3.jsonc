@@ -1,0 +1,27 @@
+{
+  "include": [
+    "~/.config/waybar/config.d/modules/custom-apps.jsonc",
+    "~/.config/waybar/config.d/modules/separator.jsonc",
+    "~/.config/waybar/config.d/modules/hyprland-workspaces.jsonc",
+    "~/.config/waybar/config.d/modules/mpd_total_time.jsonc",
+    "~/.config/waybar/config.d/modules/mpd.jsonc",
+    "~/.config/waybar/config.d/modules/mpd_back_time.jsonc"
+  ],
+  "modules-left": [
+  ],
+  "modules-center": [
+    "custom/terminal",
+    "custom/firefox",
+    "custom/thunar",
+    "custom/blender",
+    "custom/telegram",
+    "custom/gimp",
+    "custom/kdenlive",
+    "custom/kodi",
+    "custom/code",
+    "custom/pureref",
+    "custom/bottom"
+  ],
+  "modules-right": [
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "custom/power": {
+        "format": "<span font_size='14pt' color='#f38ba8'>  </span>{}",
+        "rotate": "${r_deg}",
+        "exec": "echo ; echo  logout",
+        "on-click": "~/.config/wlogout/wlogout-launch.sh",
+        "interval" : 86400, // once every day
+        "tooltip": false,
+    },
+}

@@ -1,0 +1,8 @@
+{
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "<span font_size='10pt' color='#a6e3a1'><b>US</b></span>",
+    "format-ru": "<span font_size='10pt' color='#a6e3a1'><b>RU</b></span>",
+    "on-click": "hyprctl switchxkblayout evision-usb-device next"
+  }
+}

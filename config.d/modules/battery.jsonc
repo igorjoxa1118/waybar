@@ -1,0 +1,31 @@
+{
+  "battery": {
+    "align": 0,
+    "rotate": 0,
+    "bat": "BAT0",
+    "adapter": "AC",
+    "full-at": 100,
+    "design-capacity": false,
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": "󱘖 {capacity}%",
+    "format-alt-click": "click",
+    "format-full": "<span font_size='12pt' color='#a6e3a1'>{icon}</span> {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-icons": [
+      "",  // 0-10%
+      "",  // 10-30%
+      "",  // 30-60%
+      "",  // 60-90%
+      ""   // 90-100%
+    ],
+    "format-time": "{H}h {M}min",
+    "tooltip": false,
+    "tooltip-format": "{timeTo} {power}w"
+  },
+}

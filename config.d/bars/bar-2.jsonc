@@ -1,0 +1,49 @@
+{
+  "include": [
+    "~/.config/waybar/config.d/modules/custom-apps.jsonc",
+    "~/.config/waybar/config.d/modules/separator.jsonc",
+    "~/.config/waybar/config.d/modules/hyprland-workspaces.jsonc",
+    "~/.config/waybar/config.d/modules/mpd_total_time.jsonc",
+    "~/.config/waybar/config.d/modules/mpd.jsonc",
+    "~/.config/waybar/config.d/modules/mpd_back_time.jsonc"
+  ],
+  "modules-left": [
+    "custom/terminal",
+    "custom/separator2",
+    "custom/firefox",
+    "custom/separator2",
+    "custom/thunar",
+    "custom/separator2",
+    "custom/blender",
+    "custom/separator2",
+    "custom/telegram",
+    "custom/separator2",
+    "custom/gimp",
+    "custom/separator2",
+    "custom/kdenlive",
+    "custom/separator2",
+    "custom/kodi",
+    "custom/separator2",
+    "custom/code",
+    "custom/separator2",
+    "custom/pureref",
+    "custom/separator2",
+    "custom/bottom"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "custom/yamuse",
+    "custom/separator2",
+    "custom/mpd_total_time",
+    "custom/separator2",
+    "mpd#2",
+    "mpd#3",
+    "mpd#4",
+    "custom/separator2",
+    "custom/mpd_back_time",
+    "custom/separator2",
+    "custom/mpd"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+"custom/mpd": {
+  "exec": "~/.config/waybar/scripts/mpd_scroller.py",
+  "interval": 1,
+  "return-type": "json",
+  "tooltip": true,
+  "on-click": "mpc toggle",
+  "on-click-right": "mpc stop"
+  },
+  "mpd#2": {
+    "exec-if": "which mpc",
+    "format": "<span font_size='15pt' color='#89b4fa'>❮</span>",
+    "tooltip-format": "{artist} - {title}",
+    "format-disconnected": "<span font_size='15pt' color='#89b4fa'>❮</span>",
+    "format-paused": "<span font_size='15pt' color='#89b4fa'>❮</span>",
+    "format-stopped": "<span font_size='15pt' color='#89b4fa'>❮</span>",
+    "on-click": "mpc -q pause && mpc -q prev && mpc -q start"
+  },
+  "mpd#3": {
+    "exec-if": "which mpc",
+    "interval": 1,
+    "format": "{stateIcon}",
+    "tooltip-format": "{artist} - {title}",
+    "format-disconnected": "<span font_size='15pt' color='#f38ba8'></span>",
+    "format-paused": "{stateIcon}",
+    "format-stopped": "<span font_size='15pt' color='#f38ba8'></span>",
+    "state-icons": {
+      "paused": "<span font_size='15pt' color='#f38ba8'></span>",
+      "playing": "<span font_size='15pt' color='#a6e3a1'></span>"
+    },
+    "on-click": "mpc toggle"
+  },
+  "mpd#4": {
+    "exec-if": "which mpc",
+    "format": "<span font_size='15pt' color='#89b4fa'>❯</span>",
+    "tooltip-format": "{artist} - {title}",
+    "format-disconnected": "<span font_size='15pt' color='#89b4fa'>❯</span>",
+    "format-paused": "<span font_size='15pt' color='#89b4fa'>❯</span>",
+    "format-stopped": "<span font_size='15pt' color='#89b4fa'>❯</span>",
+    "on-click": "mpc -q pause && mpc -q next && mpc -q start"
+  },
+  "custom/yamuse": {
+    "format": "<span font_size='15pt' color='#89b4fa'></span>",  // Иконка наушников
+    "tooltip": false,
+    "on-click": "ymuse",  // Или полный путь, если знаете где бинарник
+    "on-click-right": "pkill ymuse"  // Опционально: закрыть по ПКМ
+  }
+}

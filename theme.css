@@ -1,0 +1,47 @@
+/* Catppuccin Mocha Color Palette */
+@define-color base         #1e1e2e;   /* Base */
+@define-color mantle       #181825;   /* Mantle */
+@define-color crust        #11111b;   /* Crust */
+
+@define-color text         #cdd6f4;   /* Text */
+@define-color subtext0     #a6adc8;   /* Subtext 0 */
+@define-color subtext1     #bac2de;   /* Subtext 1 */
+
+@define-color surface0     #313244;   /* Surface 0 */
+@define-color surface1     #45475a;   /* Surface 1 */
+@define-color surface2     #585b70;   /* Surface 2 */
+
+@define-color overlay0     #6c7086;   /* Overlay 0 */
+@define-color overlay1     #7f849c;   /* Overlay 1 */
+@define-color overlay2     #9399b2;   /* Overlay 2 */
+
+@define-color blue         #89b4fa;   /* Blue */
+@define-color lavender     #b4befe;   /* Lavender */
+@define-color sapphire     #74c7ec;   /* Sapphire */
+@define-color sky          #89dceb;   /* Sky */
+@define-color teal         #94e2d5;   /* Teal */
+@define-color green        #a6e3a1;   /* Green */
+@define-color yellow       #f9e2af;   /* Yellow */
+@define-color peach        #fab387;   /* Peach */
+@define-color maroon       #eba0ac;   /* Maroon */
+@define-color red          #f38ba8;   /* Red */
+@define-color mauve        #cba6f7;   /* Mauve */
+@define-color pink         #f5c2e7;   /* Pink */
+@define-color flamingo     #f2cdcd;   /* Flamingo */
+@define-color rosewater    #f5e0dc;   /* Rosewater */
+
+/* Основные цвета панели */
+@define-color bar-bg       rgba(30, 30, 46, 0);       /* Прозрачный базовый цвет */
+@define-color main-bg      rgba(30, 30, 46, 0.8);     /* Основной фон с прозрачностью */
+@define-color main-fg      @subtext0;                 /* Основной текст */
+
+/* Цвета состояний */
+@define-color wb-act-bg    rgba(235, 160, 172, 0.4);  /* Активный workspace - maroon */
+@define-color wb-act-fg    @maroon;                   /* Текст активного workspace */
+@define-color wb-hvr-bg    rgba(137, 180, 250, 0.4);  /* Hover workspace - blue */
+@define-color wb-hvr-fg    @blue;                     /* Текст при наведении */
+
+/* Дополнительные элементы */
+@define-color module-bg    rgba(49, 50, 68, 0.6);     /* Фон модулей - surface0 */
+@define-color module-fg    @text;                      /* Текст модулей */
+@define-color module-hvr   @mauve;                     /* Цвет при наведении на модуль */

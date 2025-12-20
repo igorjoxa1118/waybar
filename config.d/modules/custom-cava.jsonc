@@ -1,0 +1,13 @@
+{
+  "custom/cava": {
+      "exec": "~/.config/waybar/scripts/cava/cava.sh",
+      "exec-if": "which cava",
+      "format": "{}",
+      "escape": false,
+      "min-length": 16,
+      "max-length": 16,
+      "on-click": "kitty --class center-float-mini cava",
+      "on-click-right": "qpwgraph",
+      "on-click-middle": "easyeffects",
+    },
+  }
