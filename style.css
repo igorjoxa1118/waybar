@@ -19,7 +19,7 @@ window#waybar {
 
 window#waybar.top-panel {
 background-image: 
-        linear-gradient(@base, @base), 
+        linear-gradient(alpha(@base, 0.9), alpha(@base, 0.9)), 
         linear-gradient(to right, @blue, @mauve, @red, @peach, @green);
     background-origin: border-box;
     background-clip: padding-box, border-box;
@@ -34,7 +34,7 @@ background-image:
 
 window#waybar.bottom-panel {
 background-image: 
-        linear-gradient(@base, @base), 
+        linear-gradient(alpha(@base, 0.9), alpha(@base, 0.9)), 
         linear-gradient(to right, @green, @peach, @red, @mauve, @blue);
     background-origin: border-box;
     background-clip: padding-box, border-box;
