@@ -18,32 +18,36 @@ window#waybar {
 }
 
 window#waybar.top-panel {
-background-image: 
+    background-image: 
         linear-gradient(alpha(@base, 0.9), alpha(@base, 0.9)), 
         linear-gradient(to right, @blue, @mauve, @red, @peach, @green);
     background-origin: border-box;
     background-clip: padding-box, border-box;
 
-    /* border оставляем 1px для четкой границы нити */
     border-bottom: 1px solid transparent; 
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-radius: 0 0 30px 30px;
 
-    /* Тень: 0 (X), -4px (Y вверх), 10px (размытие), 0 (растяжение) */
-    box-shadow: inset 0 -4px 1px 0 alpha(@separator, 0.3);
+    /* Поменял 1px на 10px для более мягкого эффекта, если нужно именно свечение */
+    box-shadow: inset 0 -4px 10px 0 alpha(@separator, 0.3);
 }
 
 window#waybar.bottom-panel {
-background-image: 
+    background-image: 
         linear-gradient(alpha(@base, 0.9), alpha(@base, 0.9)), 
         linear-gradient(to right, @green, @peach, @red, @mauve, @blue);
     background-origin: border-box;
     background-clip: padding-box, border-box;
 
     border-top: 1px solid transparent; 
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     border-radius: 30px 30px 0 0;
 
-    /* Тень: 0 (X), 4px (Y вниз), 10px (размытие), 0 (растяжение) */
-    box-shadow: inset 0 4px 1px 0 alpha(@separator, 0.3);
+    box-shadow: inset 0 4px 10px 0 alpha(@separator, 0.3);
 }
 
 /* Применяем стили к обертке всех модулей */
