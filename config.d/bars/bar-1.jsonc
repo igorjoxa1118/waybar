@@ -3,13 +3,9 @@
     /*Left modules*/
     "~/.config/waybar/config.d/modules/custom-launcher.jsonc",
     "~/.config/waybar/config.d/modules/separator.jsonc",
-    "~/.config/waybar/config.d/modules/cpu.jsonc",
-    "~/.config/waybar/config.d/modules/memory.jsonc",
-    "~/.config/waybar/config.d/modules/temperature-nvidia.jsonc",
-    "~/.config/waybar/config.d/modules/custom-updates.jsonc",
-    "~/.config/waybar/config.d/modules/diskusage.jsonc",
+    "~/.config/waybar/config.d/modules/wallpapers.jsonc",
+    "~/.config/waybar/config.d/modules/system-modules.jsonc",
     "~/.config/waybar/config.d/modules/vpn-status.jsonc",
-    "~/.config/waybar/config.d/modules/swap.jsonc",
     /*Center modules*/
     "~/.config/waybar/config.d/modules/pipewire-volume.jsonc",
     "~/.config/waybar/config.d/modules/pulseaudio.jsonc",
@@ -41,7 +37,7 @@
     "custom/updates_icon",
     "custom/updates_count",
     "custom/separator2",
-    "custom/swap"
+    "custom/wall"
   ],
   "modules-center": [
     "pulseaudio",
@@ -65,6 +61,6 @@
     "custom/rofi-calendar",
     "clock",
     "custom/separator2",
-    "custom/power"
+    "custom/powermenu"
   ]
 }

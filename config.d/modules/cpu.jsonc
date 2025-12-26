@@ -1,7 +1,0 @@
-{
-  "cpu": {
-  "format": "<span font_size='12pt' color='#f5e0dc'><b>CPU</b></span>{usage: >3}%",
-  "on-click": "kitty -e htop",
-  "tooltip": false,
-},
-}

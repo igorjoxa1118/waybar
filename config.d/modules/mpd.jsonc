@@ -41,7 +41,8 @@
   },
   "custom/yamuse": {
     "format": "<span font_size='15pt' color='#89b4fa'></span>",  // Иконка наушников
-    "tooltip": false,
+    "tooltip": true,
+    "tooltip-format": "Music player", 
     "on-click": "ymuse",  // Или полный путь, если знаете где бинарник
     "on-click-right": "pkill ymuse"  // Опционально: закрыть по ПКМ
   }

@@ -5,7 +5,8 @@
     "~/.config/waybar/config.d/modules/hyprland-workspaces.jsonc",
     "~/.config/waybar/config.d/modules/mpd_total_time.jsonc",
     "~/.config/waybar/config.d/modules/mpd.jsonc",
-    "~/.config/waybar/config.d/modules/mpd_back_time.jsonc"
+    "~/.config/waybar/config.d/modules/mpd_back_time.jsonc",
+    "~/.config/waybar/config.d/modules/custom-weather.jsonc"
   ],
   "modules-left": [
     "custom/terminal",
@@ -44,6 +45,8 @@
     "custom/separator2",
     "custom/mpd_back_time",
     "custom/separator2",
-    "custom/mpd"
+    "custom/mpd",
+    "custom/separator2",
+    "custom/weather"
   ]
 }

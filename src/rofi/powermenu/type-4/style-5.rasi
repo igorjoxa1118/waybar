@@ -1,0 +1,174 @@
+
+
+/**
+ * Rofi Theme File (Catppuccin Mocha Edition)
+ * Based on original by Aditya Shakya (adi1090x)
+ * Colors: https://github.com/catppuccin/catppuccin
+ **/
+
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 false;
+}
+
+/*****----- Catppuccin Mocha Colors -----*****/
+* {
+    /* Spacing and layout (original values) */
+    mainbox-spacing:             52px;
+    mainbox-margin:              0px 470px;
+    message-margin:              0px 350px;
+    message-padding:             15px;
+    message-border-radius:       100%;
+    listview-spacing:            25px;
+    element-padding:             20px 40px 45px 40px;
+    element-border-radius:       100%;
+
+    /* Fonts (original values) */
+    prompt-font:                 "MesloLGS NF Regular Bold 32";
+    textbox-font:                "MesloLGS NF Regular 10";
+    element-text-font:           "feather Bold 48";
+
+    /* Catppuccin Mocha Color Palette */
+    base:       #1e1e2eE6;    /* #1e1e2e with 90% opacity */
+    mantle:     #181825;    /* #181825 */
+    crust:      #11111b;    /* #11111b */
+
+    text:       #cdd6f4;                  /* Text color */
+    subtext1:   #bac2de;
+    subtext0:   #a6adc8;
+
+    overlay2:   #9399b2;
+    overlay1:   #7f849c;
+    overlay0:   #6c7086;
+
+    surface2:   #585b70;
+    surface1:   #45475a;
+    surface0:   #313244;
+
+    blue:       #89b4fa;
+    lavender:   #b4befe;
+    sapphire:   #74c7ec;
+    sky:        #89dceb;
+    teal:       #94e2d5;
+    green:      #a6e3a1;
+    yellow:     #f9e2af;
+    peach:      #fab387;
+    maroon:     #eba0ac;
+    red:        #f38ba8;
+    mauve:      #cba6f7;
+    pink:       #f5c2e7;
+    flamingo:   #f2cdcd;
+    rosewater:  #f5e0dc;
+
+    /* Application colors */
+    background-window:           var(base);
+    background-normal:           var(base);
+    background-selected:         var(blue);
+    foreground-normal:           var(text);
+    foreground-selected:         var(crust);
+}
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  true;
+    cursor:                      "default";
+    background-color:            var(background-window);
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     var(mainbox-spacing);
+    margin:                      var(mainbox-margin);
+    background-color:            transparent;
+    children:                    [ "dummy", "userimage", "inputbar", "listview", "message", "dummy" ];
+}
+
+/*****----- User -----*****/
+userimage {
+    margin:                      0px 400px;
+    border:                      2px;
+    border-radius:               100%;
+    border-color:                var(maroon);
+    background-color:            transparent;
+    background-image:            url("~/.config/i3/src/powermenu/img/user/vir0id.jpg", both);
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    background-color:            transparent;
+    children:                    [ "dummy", "prompt", "dummy"];
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+prompt {
+    enabled:                     true;
+    font:                        var(prompt-font);
+    background-color:            transparent;
+    text-color:                  var(foreground-normal);
+}
+
+/*****----- Message -----*****/
+message {
+    enabled:                     true;
+    margin:                      var(message-margin);
+    padding:                     var(message-padding);
+    border-radius:               var(message-border-radius);
+    background-color:            transparent;
+    text-color:                  var(green);
+}
+textbox {
+    font:                        var(textbox-font);
+    background-color:            transparent;
+    text-color:                  inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    expand:                      false;
+    columns:                     5;
+    lines:                       1;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+
+    spacing:                     var(listview-spacing);
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    padding:                     var(element-padding);
+    border-radius:               var(element-border-radius);
+    background-color:            transparent;
+    text-color:                  var(foreground-normal);
+    cursor:                      pointer;
+}
+element-text {
+    font:                        var(element-text-font);
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+element selected.normal {
+    background-color:            var(background-selected);
+    text-color:                  var(foreground-selected);
+}

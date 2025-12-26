@@ -1,4 +1,4 @@
-@import "./themes/mocha.css";
+@import "./src/style-css/themes/mocha.css";
 
 /* ======================
    Глобальные стили Waybar
@@ -14,25 +14,42 @@
 
 /* Фон окна Waybar */
 window#waybar {
-    background: rgba(30, 30, 46, .9); /* Цвет основной панели где распологаются все модули и сепараторы */
+    background: alpha(@base, 0.9); /* Цвет основной панели где распологаются все модули и сепараторы */
 }
 
 window#waybar.top-panel {
-    background: rgba(30, 30, 46, .9); /* Цвет основной панели где распологаются все модули и сепараторы */
-    border-radius: 0 0 30px 30px; /* Верхние углы (лево/право) = 0 */
-    margin-top: 0;                /* Убираем отступ сверху, если он был */
+background-image: 
+        linear-gradient(@base, @base), 
+        linear-gradient(to right, @blue, @mauve, @red, @peach, @green);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    /* border оставляем 1px для четкой границы нити */
+    border-bottom: 1px solid transparent; 
+    border-radius: 0 0 30px 30px;
+
+    /* Тень: 0 (X), -4px (Y вверх), 10px (размытие), 0 (растяжение) */
+    box-shadow: inset 0 -4px 1px 0 alpha(@separator, 0.3);
 }
 
 window#waybar.bottom-panel {
-    background: rgba(30, 30, 46, .9); /* Цвет основной панели где распологаются все модули и сепараторы */
-    border-radius: 30px 30px 0 0; /* Нижние углы (лево/право) = 0 */
-    margin-bottom: 0;             /* Убираем отступ снизу */
+background-image: 
+        linear-gradient(@base, @base), 
+        linear-gradient(to right, @green, @peach, @red, @mauve, @blue);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    border-top: 1px solid transparent; 
+    border-radius: 30px 30px 0 0;
+
+    /* Тень: 0 (X), 4px (Y вниз), 10px (размытие), 0 (растяжение) */
+    box-shadow: inset 0 4px 1px 0 alpha(@separator, 0.3);
 }
 
 /* Применяем стили к обертке всех модулей */
 /* В Waybar основной внутренний контейнер называется #main-box */
 #main-box {
-  background: rgba(30, 30, 46, 1); /* Ваш основной фон */
+  background: alpha(@base, 1); /* Ваш основной фон */
   border-radius: 15px;               /* Скругление */
   border: 1px solid rgba(137, 180, 250, 0.3); /* Тонкая рамка в цвет тени */
   padding-left: 5px;  /* Сдвиг левой группы вправо */
@@ -44,7 +61,7 @@ window#waybar.bottom-panel {
 }
 
 .module {
-  background-color: rgba(30, 30, 46, .9); /* Фон для всех модулей, имеющих класс `.module`. */
+  background-color: alpha(@base, 0.9); /* Фон для всех модулей, имеющих класс `.module`. */
   margin: 6px 0; /* Вертикальный отступ между модулями. */
   padding: 0 10px; /* Горизонтальный внутренний отступ. */
 }
@@ -83,7 +100,7 @@ window#waybar.bottom-panel {
 }
 
 #workspaces {
-  background-color: rgba(30, 30, 46, .9); /* Устанавливает полупрозрачный фон для контейнера с рабочими столами. */
+  background-color: alpha(@base, 0.9); /* Устанавливает полупрозрачный фон для контейнера с рабочими столами. */
   border-radius: 30px; /* Закругляет углы контейнера. */
 }
 
@@ -93,8 +110,8 @@ window#waybar.bottom-panel {
 /* ======================
    Общие стили для модулей
    ====================== */
-#custom-launcher, #cpu, #memory, #custom-diskusage, #custom-swap, #custom-cava, #backlight, #network, #custom-netspeed, #battery, 
-#hyprland-language, #tray, #clock, #custom-power,#custom-yamuse, #custom-mpd_total_time, #custom-mpd, #custom-mpd_back_time,
+#custom-launcher, #cpu, #memory, #custom-diskusage, #custom-wall, #custom-cava, #backlight, #network, #custom-netspeed, #battery, 
+#hyprland-language, #tray, #clock, #custom-powermenu,#custom-yamuse, #custom-mpd_total_time, #custom-mpd, #custom-mpd_back_time,
 #mpd-2, #mpd-3, #mpd-4,#custom-gpu-usage, #custom-gpu-temp {
   font-family: "MesloLGS NF", monospace; /* Устанавливает шрифт для перечисленных модулей. */
   min-width: 22px; /* Минимальная ширина модуля. */
@@ -114,18 +131,12 @@ window#waybar.bottom-panel {
    Индивидуальные модули
    ====================== */
 #custom-launcher, #custom-terminal, #pulseaudio, #network, #custom-yamuse { border-radius: 30px 0 0 30px; padding-left: 25px; } /* Закругляет только левую сторону модуля сети и увеличивает левый отступ. */
-#custom-power, #custom-mpd, #backlight, #custom-swap, #custom-bottom { border-radius: 0 30px 30px 0; padding-right: 25px; } /* Закругляет только правую сторону модулей Swap и PureRef. */
-
-/* Лаунчер (меню) */
-#custom-launcher { padding-left: 25px; } /* Увеличивает левый отступ для кнопки запуска приложений. */
-
-/* Кнопка выключения */
-#custom-power { padding-right: 25px; } /* Увеличивает правый отступ для кнопки выключения. */
+#custom-powermenu, #custom-weather, #backlight, #custom-wall, #custom-bottom { border-radius: 0 30px 30px 0; padding-right: 25px; } /* Закругляет только правую сторону модулей Wall и PureRef. */
 
 /* Блок обновлений */
 #custom-updates_icon {
     font-size: 16pt; /* Устанавливает размер иконки обновлений. */
-    color: #f2cdcd; /* Устанавливает цвет иконки. */
+    color: @flamingo; /* Устанавливает цвет иконки. */
     padding: 2px 2px 2px 2px; /* Устанавливает внутренние отступы для иконки. */
 }
 
@@ -136,12 +147,12 @@ window#waybar.bottom-panel {
 }
 
 #custom-updates_icon, #custom-updates_count {
-    background-color: rgba(30, 30, 46, 1); /* Устанавливает общий фон для блока обновлений. */
+    background-color: alpha(@base, 1); /* Устанавливает общий фон для блока обновлений. */
 }
 
 /* Сепараторы */
 #custom-separator, #custom-separator2 {
-  color: rgba(44, 58, 81, 1); /* Устанавливает цвет для разделителей. */
+  color: alpha(@separator, 1); /* Устанавливает цвет для разделителей. */
   padding: 0 5px; /* Горизонтальные отступы для разделителей. */
 }
 
@@ -156,9 +167,9 @@ window#waybar.bottom-panel {
 }
 
 /* MPD (музыкальный плеер) */
-#custom-mpd.playing { color: #cdd6f4; } /* Цвет, когда музыка играет. */
-#custom-mpd.paused { color: #eba0ac; }  /* Цвет, когда музыка на паузе. */
-#custom-mpd.stopped { color: #f38ba8; } /* Цвет, когда музыка остановлена. */
+#custom-mpd.playing { color: @text; } /* Цвет, когда музыка играет. */
+#custom-mpd.paused { color: @maroon; }  /* Цвет, когда музыка на паузе. */
+#custom-mpd.stopped { color: @red; } /* Цвет, когда музыка остановлена. */
 
 #custom-mpd_back_time { color: @green; } /* Цвет для модуля обратного отсчета времени трека. */
 #custom-mpd_total_time { color: @green; } /* Цвет для модуля общего времени трека. */
@@ -184,13 +195,15 @@ window#waybar.bottom-panel {
 
 /* Тултипы (подсказки) */
 #tooltip {
-  background: rgba(30, 30, 46, .9); /* Полупрозрачный фон для всплывающих подсказок. */
-  color: @text; /* Цвет текста в подсказках. */
-  border-radius: 10px; /* Закругление углов. */
-  border-width: 2px; /* Толщина границы. */
-  border-style: solid; /* Стиль границы - сплошная линия. */
-  border-color: @lavender; /* Цвет границы. */
-  padding: 10px; /* Внутренний отступ. */
+  transition: none; /* Убираем задержку появления */
+  background: alpha(@base, 0.9);
+  color: @text;
+  border-radius: 10px;
+  border: 2px solid @lavender;
+  padding: 10px;
+  /* ПРИНУДИТЕЛЬНО задаем обычный шрифт, а не MesloLGS NF */
+  font-family: sans-serif; 
+  font-size: 13px;
 }
 
 /* Скроллбар (полоса прокрутки) */
@@ -198,19 +211,59 @@ window#waybar.bottom-panel {
   color: @green; /* Цвет полосы прокрутки внутри подсказок. */
 }
 
+/* ======================
+   Цвета иконок программ
+   ====================== */
 
+/* Базовые стили для всех иконок в группе */
+#custom-terminal, #custom-firefox, #custom-thunar, #custom-blender, 
+#custom-telegram, #custom-gimp, #custom-kdenlive, #custom-kodi, 
+#custom-code, #custom-pureref, #custom-bottom {
+    font-size: 14pt;
+    padding: 0 8px; /* Стандартный отступ между иконками */
+}
 
-/* Левая панель */
+/* Возвращаем отступы от краев панели */
+#custom-terminal { 
+    color: @blue; 
+    padding-left: 30px; /* Отступ от левого края */
+}
+
+#custom-bottom { 
+    color: @mauve; 
+    padding-right: 30px; /* Отступ от правого края */
+}
+
+/* Назначаем индивидуальные цвета из темы Catppuccin */
+#custom-terminal { color: @blue; }      /* Blue */ 
+#custom-firefox  { color: @sapphire; }  /* Sapphire */ 
+#custom-thunar   { color: @sky; }       /* Sky */ 
+#custom-blender  { color: @teal; }      /* Teal */ 
+#custom-telegram { color: @green; }     /* Green */ 
+#custom-gimp     { color: @yellow; }    /* Yellow */ 
+#custom-kdenlive { color: @pink; }      /* Pink (замена для Video Editor) */ 
+#custom-kodi     { color: @lavender; }  /* Lavender */ 
+#custom-code     { color: @maroon; }    /* Maroon */ 
+#custom-pureref  { color: @red; }       /* Red */ 
+#custom-bottom   { color: @mauve; }     /* Mauve */ 
+
+/*********************************/
+/*********************************/
+/*********************************/
+/******** Левая панель ***********/
+/*********************************/
+/*********************************/
+/*********************************/
 
 #waybar.right-bar {
-    background: rgba(30, 30, 46, .9);
+    background: alpha(@base, 0.9);
     border-radius: 25px; /* Можно оставить и здесь для порядка */
 }
 
 /* Настройка скругления и внешнего вида левой панели */
 #waybar.right-bar #main-box {
-    background: rgba(30, 30, 46, .9);           /* Темный фон */
-    border: 2px solid #89b4fa;     /* Синяя рамка */
+    background: alpha(@base, 0.9);           /* Темный фон */
+    border: 2px solid @blue;     /* Синяя рамка */
     
     /* СКРУГЛЕНИЕ КРАЕВ */
     border-radius: 25px;           /* Чем больше число, тем сильнее скругление */
@@ -220,12 +273,12 @@ window#waybar.bottom-panel {
     padding: 20px 0;               /* Внутренние отступы сверху и снизу */
     
     /* Тень для эффекта глубины */
-    box-shadow: 0 0 15px rgba(137, 180, 250, 0.5);
+    box-shadow: 0 0 15px alpha(@blue, 0.5);
 }
 
 /* Если вы хотите, чтобы модули при наведении тоже имели скругление */
 /*#waybar.right-bar .module:hover {
-    background: rgba(30, 30, 46, .9);
+    background: alpha(@base, 0.9);
     border-radius: 15px;
 }*/
 
@@ -263,12 +316,12 @@ window#waybar.bottom-panel {
 
 /* 4. Настройка "чистого листа" для главного контейнера */
 #waybar.right-bar #main-box {
-    background: #1e1e2e; /* Ваш новый цвет фона */
-    border: 2px solid #89b4fa;
+    background: @base; /* Ваш новый цвет фона */
+    border: 2px solid @blue;
     border-radius: 20px;
     padding: 20px 0;
     margin: 10px 0px 10px 10px; /* Установите 0px справа */
-    box-shadow: 0 0 15px rgba(137, 180, 250, 0.5);
+    box-shadow: 0 0 15px alpha(@blue, 0.5);
 }
 
 /* 5. Если иконки внутри кнопок (например, воркспейсы) все еще имеют стили */
@@ -280,5 +333,5 @@ window#waybar.bottom-panel {
 }
 
 #waybar.right-bar button:hover {
-    background: rgba(137, 180, 250, 0.2); /* Легкий эффект при наведении */
+    background: alpha(@blue, 0.2); /* Легкий эффект при наведении */
 }

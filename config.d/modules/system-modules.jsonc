@@ -1,0 +1,49 @@
+{
+  "cpu": {
+    "format": "<span font_size='12pt' color='#f5e0dc'><b>CPU</b></span>{usage: >3}%",
+    "on-click": "kitty -e htop",
+    "tooltip": false,
+  },
+  "custom/diskusage": {
+    "format": "<span font_size='12pt' color='#f38ba8'><b>DSK</b> </span>{}",
+    "tooltip": false,
+    "exec": "~/.config/i3/src/diskusage",
+    "interval": 30
+  },
+  "custom/gpu-usage": {
+    "exec": "cat /sys/class/hwmon/hwmon4/device/gpu_busy_percent",
+    "on-click": "pypr toggle nvtop",
+    "format": "<span font_size='12pt' color='#cba6f7'><b>GPU</b></span>{}%",
+    "return-type": "",
+    "interval": 2,
+  },
+  "memory": {
+    "format": "<span font_size='12pt' color='#cba6f7'><b>RAM</b></span>{: >3}%",
+    "on-click": "kitty -e htop"
+  },
+  "custom/gpu-usage": {
+    "exec": "nvidia-smi --query-gpu=utilization.gpu,temperature.gpu --format=csv,nounits,noheader | awk -F', ' '{print $1\"%\"}'",
+    "exec-if": "which nvidia-smi",
+    "format": "<span font_size='12pt' color='#f5c2e7'><b>GPU </b></span>{}",
+    "interval": 2
+  },
+  "custom/gpu-temp": {
+    "exec": "nvidia-smi --query-gpu=utilization.gpu,temperature.gpu --format=csv,nounits,noheader | awk -F', ' '{print $2\"°C\"}'",
+    "exec-if": "which nvidia-smi",
+    "format": "<span font_size='12pt' color='#f2cdcd'><b>GPU </b></span>{}",
+    "interval": 2
+  },
+  "custom/updates_icon": {
+    "format": " ",
+    "tooltip": false
+  },
+  "custom/updates_count": {
+    "format": "{}",
+    "exec": "checkupdates | wc -l",
+    "exec-if": "which checkupdates",
+    "interval": 15,
+    "on-click": "if command -v paru &> /dev/null; then kitty -T update paru -Syu; else kitty -T update yay -Syu; fi && notify-send 'The system has been updated'",
+    "tooltip": true,
+    "tooltip-format": "Left Click: Update System\nArch Linux Only"
+  }, 
+}

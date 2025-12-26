@@ -1,8 +1,0 @@
-{
-    "custom/diskusage": {
-      "format": "<span font_size='12pt' color='#f38ba8'><b>DSK</b> </span>{}",
-      "tooltip": false,
-      "exec": "~/.config/i3/src/diskusage",
-      "interval": 30
-    },
-}

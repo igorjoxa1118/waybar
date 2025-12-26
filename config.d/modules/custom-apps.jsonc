@@ -1,83 +1,68 @@
 {
     "custom/terminal": {
         "on-click": "/usr/bin/alacritty &",
+        "format": "󰞷",
         "tooltip": true,
-        "tooltip": "Terminal",
-        "format": "<span font_size='14pt' color='#89b4fa'> 󰞷 </span>"
+        "tooltip-format": "Terminal"
     },
     "custom/firefox": {
         "on-click": "/usr/bin/zen-browser &",
+        "format": "󰈹",
         "tooltip": true,
-        "tooltip": "Web Browser",
-        "format": "<span font_size='14pt' color='#74c7ec'> 󰈹 </span>"
+        "tooltip-format": "Web Browser"
     },
     "custom/thunar": {
         "on-click": "/usr/bin/thunar &",
+        "format": "",
         "tooltip": true,
-        "tooltip": "File Manager",
-        "format": "<span font_size='14pt' color='#89dceb'>  </span>"
+        "tooltip-format": "File Manager"
     },
     "custom/blender": {
         "on-click": "prime-run /usr/bin/blender &",
+        "format": "󰂫",
         "tooltip": true,
-        "tooltip": "Blender 3D",
-        "format": "<span font_size='14pt' color='#94e2d5'> 󰂫 </span>"
+        "tooltip-format": "Blender 3D"
     },
     "custom/telegram": {
         "on-click": "/usr/bin/Telegram &",
+        "format": "",
         "tooltip": true,
-        "tooltip": "Telegram",
-        "format": "<span font_size='14pt' color='#a6e3a1'>  </span>"
+        "tooltip-format": "Telegram"
     },
     "custom/gimp": {
         "on-click": "/usr/bin/gimp &",
+        "format": "",
         "tooltip": true,
-        "tooltip": "GIMP Image Editor",
-        "format": "<span font_size='14pt' color='#f9e2af'>  </span>"
+        "tooltip-format": "GIMP Image Editor"
     },
     "custom/kodi": {
         "on-click": "/usr/bin/kodi &",
+        "format": "󰌔",
         "tooltip": true,
-        "tooltip": "Kodi Media Center",
-        "format": "<span font_size='14pt' color='#fab387'> 󰌔 </span>"
+        "tooltip-format": "Kodi Media Center"
     },
     "custom/kdenlive": {
         "on-click": "flatpak run org.kde.kdenlive &",
+        "format": "",
         "tooltip": true,
-        "tooltip": "Video Editor",
-        "format": "<span font_size='11pt' color='#f5c2e7'> 󰔆 </span>"
-    },
-    "custom/bottom": {
-        "on-click": "~/.bin/bottom_themes/bottom-themes &",
-        "tooltip": true,
-        "tooltip": "System Monitor",
-        "format": "<span font_size='14pt' color='#f9e2af'>  </span>"
+        "tooltip-format": "Video Editor"
     },
     "custom/code": {
         "on-click": "/usr/bin/code &",
+        "format": "",
         "tooltip": true,
-        "tooltip": "VS Code",
-        "format": "<span font_size='14pt' color='#eba0ac'>  </span>"
+        "tooltip-format": "VS Code"
     },
     "custom/pureref": {
         "on-click": "~/.local/bin/PureRef-2.0.3_x64.Appimage &",
+        "format": "",
         "tooltip": true,
-        "tooltip": "PureRef",
-        "format": "<span font_size='14pt' color='#f38ba8'>  </span>"
+        "tooltip-format": "PureRef"
     },
     "custom/bottom": {
         "on-click": "alacritty --class BtmFloating --hold -e ~/.bin/bottom_themes/bottom-themes &",
+        "format": "",
         "tooltip": true,
-        "tooltip": "Process viewer",
-        "format": "<span font_size='14pt' color='#cba6f7'>  </span>"
-    },
-    "custom/nordvpn": {
-        "format": "<span font_size='10pt' color='#f38ba8'> VPN {} </span>",
-        "exec": "~/.config/i3/src/polybar-nordvpn/vpn.sh",
-        "interval": 1,
-        "on-click": "nordvpn connect", // Соответствует click-left
-        "on-click-middle": "~/.config/i3/src/polybar-nordvpn/vpn.sh toggle", // Соответствует click-middle
-        "on-click-right": "nordvpn disconnect", // Соответствует click-right
-        "tooltip": true
+        "tooltip-format": "Process viewer"
     }
 }

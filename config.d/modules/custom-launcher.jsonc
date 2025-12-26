@@ -1,7 +1,7 @@
 {
   "custom/launcher": {
     "format": "<span font_size='14pt' color='#89b4fa'> </span>",
-    "on-click": "~/.config/waybar/themes/launchers/type-3/launcher.sh",
+    "on-click": "~/.config/waybar/src/rofi/launchers/type-3/launcher.sh",
     "tooltip": false,
   }
 }
