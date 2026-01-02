@@ -2,7 +2,7 @@
   "custom/pipewire-volume": {
     "format": "<span font_size='14pt' color='#89b4fa'><b>{}</b></span>%",
     "format-muted": " muted",
-    "exec": "~/.config/waybar/scripts/pipewire-volume.sh",
+    "exec": "~/.config/waybar/src/pipewire-volume.sh",
     "on-click": "pavucontrol",
     "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && killall -SIGRTMIN+1 waybar",
     "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && killall -SIGRTMIN+1 waybar",

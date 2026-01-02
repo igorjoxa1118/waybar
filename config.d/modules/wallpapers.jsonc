@@ -1,6 +1,6 @@
 {
   "custom/wall": {
-  "on-click": "~/.config/hypr/src/set_first_start_wallpaper.sh",
+  "on-click": "~/.config/hypr/src/wallpaper_manager.sh",
   "tooltip": false,
   "format": "<span font_size='18pt' color='#b4befe'><b></b></span>{}"
 },

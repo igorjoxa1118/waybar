@@ -5,7 +5,7 @@
     "max-length": 100,
     "escape": true,
     "tooltip": true,
-    "exec": "~/.config/waybar/scripts/mediaplayer.py --player spotify",
+    "exec": "~/.config/waybar/src/mediaplayer.py --player spotify",
     "exec-if": "which playerctl",
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",

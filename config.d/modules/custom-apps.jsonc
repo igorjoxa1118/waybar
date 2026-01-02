@@ -30,19 +30,19 @@
         "tooltip-format": "Telegram"
     },
     "custom/gimp": {
-        "on-click": "/usr/bin/gimp &",
+        "on-click": "prime-run /usr/bin/gimp &",
         "format": "",
         "tooltip": true,
         "tooltip-format": "GIMP Image Editor"
     },
     "custom/kodi": {
-        "on-click": "/usr/bin/kodi &",
+        "on-click": "prime-run /usr/bin/kodi &",
         "format": "󰌔",
         "tooltip": true,
         "tooltip-format": "Kodi Media Center"
     },
     "custom/kdenlive": {
-        "on-click": "flatpak run org.kde.kdenlive &",
+        "on-click": "prime-run flatpak run org.kde.kdenlive &",
         "format": "",
         "tooltip": true,
         "tooltip-format": "Video Editor"

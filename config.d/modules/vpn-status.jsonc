@@ -1,6 +1,6 @@
 {
 "custom/vpn-status": {
-  "exec": "bash ~/.config/waybar/scripts/router-vpn.sh",
+  "exec": "bash ~/.config/waybar/src/router-vpn.sh",
   "return-type": "json",
   "format": "<span font_size='12pt' color='#cba6f7'> <b>VPN</b> </span>{text}",
   "interval": 5

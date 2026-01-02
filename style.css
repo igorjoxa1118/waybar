@@ -14,7 +14,7 @@
 
 /* Фон окна Waybar */
 window#waybar {
-    background: alpha(@base, 1); /* Цвет основной панели где распологаются все модули и сепараторы */
+    background: alpha(@base, 0.9); /* Цвет основной панели где распологаются все модули и сепараторы */
 }
 
 /* --- ВЕРХНЯЯ ПАНЕЛЬ --- */
@@ -23,9 +23,9 @@ window#waybar.top-panel {
     margin: 0; 
     
     /* Рамка по бокам и снизу */
-    border-left: 1px solid @maroon;
-    border-right: 1px solid @maroon;
-    border-bottom: 1px solid @blue;
+    border-left: 1px solid @separator;   /* Градиентрый цвет для рамки. Ставь разные цвета если хочешь красиво =)*/
+    border-right: 1px solid @separator;  /* Градиентрый цвет для рамки. Ставь разные цвета если хочешь красиво =)*/
+    border-bottom: 1px solid @separator; /* Градиентрый цвет для рамки. Ставь разные цвета если хочешь красиво =)*/
     border-top: none;
     
     border-radius: 0 0 30px 30px;
@@ -37,9 +37,9 @@ window#waybar.bottom-panel {
     margin: 0;
 
     /* Рамка по бокам и сверху */
-    border-left: 1px solid @maroon;
-    border-right: 1px solid @maroon;
-    border-top: 1px solid @blue;
+    border-left: 1px solid @separator;   /* Градиентрый цвет для рамки. Ставь разные цвета если хочешь красиво =)*/
+    border-right: 1px solid @separator;  /* Градиентрый цвет для рамки. Ставь разные цвета если хочешь красиво =)*/
+    border-top: 1px solid @separator;    /* Градиентрый цвет для рамки. Ставь разные цвета если хочешь красиво =)*/
     border-bottom: none;
     
     border-radius: 30px 30px 0 0;

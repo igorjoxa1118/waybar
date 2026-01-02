@@ -1,7 +1,7 @@
 {
 "custom/netspeed": {
     "format": "{}",
-    "exec": "~/.config/waybar/scripts/network-speed.sh",
+    "exec": "~/.config/waybar/src/network-speed.sh",
     "on-click": "kitty -e nmtui",
     "on-scroll-up": "pamixer -i 5",
     "on-scroll-down": "pamixer -d 5",

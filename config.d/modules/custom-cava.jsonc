@@ -1,6 +1,6 @@
 {
   "custom/cava": {
-      "exec": "~/.config/waybar/scripts/cava/cava.sh",
+      "exec": "~/.config/waybar/src/cava/cava.sh",
       "exec-if": "which cava",
       "format": "{}",
       "escape": false,
