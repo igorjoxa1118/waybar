@@ -18,7 +18,7 @@
         "tooltip-format": "File Manager"
     },
     "custom/blender": {
-        "on-click": "prime-run /usr/bin/blender &",
+        "on-click": "/usr/bin/blender &",
         "format": "󰂫",
         "tooltip": true,
         "tooltip-format": "Blender 3D"
@@ -30,19 +30,19 @@
         "tooltip-format": "Telegram"
     },
     "custom/gimp": {
-        "on-click": "prime-run /usr/bin/gimp &",
+        "on-click": "/usr/bin/gimp &",
         "format": "",
         "tooltip": true,
         "tooltip-format": "GIMP Image Editor"
     },
     "custom/kodi": {
-        "on-click": "prime-run /usr/bin/kodi &",
+        "on-click": "/usr/bin/kodi &",
         "format": "󰌔",
         "tooltip": true,
         "tooltip-format": "Kodi Media Center"
     },
     "custom/kdenlive": {
-        "on-click": "prime-run flatpak run org.kde.kdenlive &",
+        "on-click": "/usr/bin/kdenlive &",
         "format": "",
         "tooltip": true,
         "tooltip-format": "Video Editor"
