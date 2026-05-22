@@ -1,0 +1,47 @@
+@import "./themes/mocha.css";
+
+#workspaces button {
+  color: @base;
+  border-radius: 30px;
+  margin: 0 6px;
+}
+
+#workspaces button:hover * { color: @peach; }
+#workspaces button:hover {
+  color: @mauve;
+  box-shadow: none;
+  text-shadow: none;
+  background: none;
+}
+
+#workspaces * {
+  color: @subtext0;
+  padding: 0 4px;
+}
+
+#workspaces {
+  background-color: alpha(@base, 0.9);
+  border-radius: 30px;
+}
+
+#workspaces button.focused { color: @mauve; }
+#workspaces button.active * { color: @blue; }
+
+#hyprland-language {
+  font-family: "MesloLGS NF", monospace;
+  min-width: 22px;
+  min-height: 22px;
+  padding: 2px;
+}
+
+#custom-hyprshade {
+  color: @peach;
+  padding: 0 10px;
+}
+
+/* Сброс специфического фона для правой панели */
+#waybar.right-bar #workspaces {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}

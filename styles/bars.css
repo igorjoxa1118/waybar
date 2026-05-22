@@ -1,0 +1,92 @@
+@import "./themes/mocha.css";
+
+window#waybar {
+    background: alpha(@base, 0.9);
+}
+
+/* --- ВЕРХНЯЯ ПАНЕЛЬ --- */
+window#waybar.top-panel {
+    background: alpha(@base, 0.9);
+    margin: 0; 
+    border-left: 1px solid @separator;
+    border-right: 1px solid @separator;
+    border-bottom: 1px solid @separator;
+    border-top: none;
+    border-radius: 0 0 30px 30px;
+}
+
+/* --- НИЖНЯЯ ПАНЕЛЬ --- */
+window#waybar.bottom-panel {
+    background: alpha(@base, 0.9);
+    margin: 0;
+    border-left: 1px solid @separator;
+    border-right: 1px solid @separator;
+    border-top: 1px solid @separator;
+    border-bottom: none;
+    border-radius: 30px 30px 0 0;
+}
+
+#main-box {
+  background: alpha(@base, 1);
+  border-radius: 15px;
+  border: 1px solid rgba(137, 180, 250, 0.3);
+  padding: 0 5px;
+  margin: 5px; 
+}
+
+.module {
+  background-color: alpha(@base, 0.9);
+  margin: 6px 0;
+  padding: 0 10px;
+}
+
+.modules-left { margin-left: 5px; }
+.modules-right { margin-right: 5px; }
+
+/*********************************/
+/******** Дополнительная панель ***/
+/*********************************/
+#waybar.right-bar {
+    background: alpha(@base, 0.9);
+    border-radius: 25px;
+}
+
+#waybar.right-bar #main-box {
+    background: @base;
+    border: 2px solid @blue;
+    border-radius: 20px;
+    padding: 20px 0;
+    margin: 10px 0px 10px 10px;
+    box-shadow: 0 0 15px alpha(@blue, 0.5);
+}
+
+#waybar.right-bar .modules-left, 
+#waybar.right-bar .modules-center, 
+#waybar.right-bar .modules-right {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+#waybar.right-bar .module {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+#waybar.right-bar button {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 5px;
+}
+
+#waybar.right-bar button:hover {
+    background: alpha(@blue, 0.2);
+}

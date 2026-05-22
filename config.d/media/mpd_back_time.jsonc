@@ -1,6 +1,6 @@
 {
     "custom/mpd_back_time": {
-        "exec": "~/.config/waybar/src/mpd_back_time.sh",
+        "exec": "~/.config/waybar/src/media/mpd_back_time.sh",
         "exec-if": "which mpc",
         "return-type": "json",
         "format": "{}",

@@ -1,6 +1,6 @@
 {
     "custom/mpd_total_time": {
-        "exec": "~/.config/waybar/src/mpd_total_time.sh",
+        "exec": "~/.config/waybar/src/media/mpd_total_time.sh",
         "exec-if": "which mpc",
         "return-type": "json",
         "format": "{}",

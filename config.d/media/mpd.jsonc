@@ -1,6 +1,6 @@
 {
 "custom/mpd": {
-  "exec": "~/.config/waybar/src/mpd_scroller.py",
+  "exec": "~/.config/waybar/src/media/mpd_scroller.py",
   "interval": 1,
   "return-type": "json",
   "tooltip": true,
