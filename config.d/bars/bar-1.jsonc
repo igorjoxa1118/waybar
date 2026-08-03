@@ -14,7 +14,7 @@
     /*Right modules*/
     "~/.config/waybar/config.d/system/network.jsonc",
     "~/.config/waybar/config.d/system/net-speed.jsonc",
-    "~/.config/waybar/config.d/hyprland/hyprshade.jsonc",
+    /*"~/.config/waybar/config.d/hyprland/hyprshade.jsonc",*/
     "~/.config/waybar/config.d/system/battery.jsonc",
     "~/.config/waybar/config.d/hyprland/hyprland-language.jsonc",
     "~/.config/waybar/config.d/misc/tray.jsonc",
@@ -53,7 +53,6 @@
     "custom/separator2",
     "hyprland/language",
     "custom/separator2",
-    "custom/hyprshade",
     "battery",
     "custom/separator2",
     "tray",

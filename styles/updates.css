@@ -3,15 +3,8 @@
 #custom-updates_icon {
     font-size: 16pt;
     color: @flamingo;
-    padding: 2px;
 }
 
 #custom-updates_count {
     font-size: 14px;
-    padding: 2px;
-    padding-left: 0;
-}
-
-#custom-updates_icon, #custom-updates_count {
-    background-color: alpha(@base, 1);
 }

@@ -30,18 +30,19 @@ window#waybar.bottom-panel {
   background: alpha(@base, 1);
   border-radius: 15px;
   border: 1px solid rgba(137, 180, 250, 0.3);
-  padding: 0 5px;
-  margin: 5px; 
+  padding: 0 4px;
+  margin: 4px 6px; 
 }
 
+/* Аккуратные отступы модулей друг относительно друга без вертикального сдвига */
 .module {
-  background-color: alpha(@base, 0.9);
-  margin: 6px 0;
-  padding: 0 10px;
+  background-color: transparent;
+  margin: 0 2px;
+  padding: 0 4px;
 }
 
-.modules-left { margin-left: 5px; }
-.modules-right { margin-right: 5px; }
+.modules-left { margin-left: 4px; }
+.modules-right { margin-right: 4px; }
 
 /*********************************/
 /******** Дополнительная панель ***/

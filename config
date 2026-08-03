@@ -28,24 +28,5 @@
     "margin-right": 15,  /* Отступ справа */
     "margin-bottom": 0, /* Отступ снизу */
     "class": "bottom-bar"
-  } /* Если будешь использовать панель 3, то поставь тут запятую и раскомментируй строки ниже */
-    /*{
-    "include": "~/.config/waybar/config.d/bars/bar-3.jsonc",
-    "output": "eDP-1",
-    "mode": "hide",
-    "name": "right-bar",
-    "class": "right-bar",
-    "position": "right",
-    "layer": "top",
-    "modifier-reset": "press",
-    "show-on-click": true,
-    "height": 1,
-    "width": 55,
-    "exclusive": false,
-    "pass-through": false,
-    "margin-top": 220,  
-    "margin-left": 0,
-    "margin-right": 0,
-    "margin-bottom": 220,
-  },*/
+  }
 ]

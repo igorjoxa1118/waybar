@@ -32,17 +32,17 @@
 }
 
 /* Цвета Catppuccin для иконок */
-#custom-terminal { color: @blue; }
-#custom-firefox  { color: @sapphire; }
-#custom-thunar   { color: @sky; }
-#custom-blender  { color: @teal; }
-#custom-telegram { color: @green; }
-#custom-gimp     { color: @yellow; }
-#custom-kdenlive { color: @pink; }
-#custom-kodi     { color: @lavender; }
-#custom-code     { color: @maroon; }
-#custom-pureref  { color: @red; }
-#custom-bottom   { color: @mauve; }
+#custom-terminal label { color: @blue; }
+#custom-firefox label  { color: @sapphire; }
+#custom-thunar label   { color: @sky; }
+#custom-blender label  { color: @teal; }
+#custom-telegram label { color: @green; }
+#custom-gimp label     { color: @yellow; }
+#custom-kdenlive label { color: @pink; }
+#custom-kodi label     { color: @lavender; }
+#custom-code label     { color: @maroon; }
+#custom-pureref label  { color: @red; }
+#custom-bottom label   { color: @mauve; }
 
 /* Очистка фонов для правой панели */
 #waybar.right-bar #custom-launcher {

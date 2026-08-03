@@ -1,18 +1,23 @@
 @import "./themes/mocha.css";
 
+/* Убран глобальный сброс margin/padding для '*', чтобы он не ломал отступы модулей и иконок */
 * {
-  color: @text;
-  padding: 0;
-  margin: 0;
   font-family: "MesloLGS NF", monospace;
   font-weight: normal;
   transition: all 0.3s ease;
 }
 
+window#waybar {
+  color: @text;
+}
+
 /* Сепараторы */
 #custom-separator, #custom-separator2 {
-  color: alpha(@separator, 1);
-  padding: 0 5px;
+  color: @separator; /* или color: #2c3a51; */
+  min-width: 0px;
+  min-height: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 /* Тултипы (подсказки) */

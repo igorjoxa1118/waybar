@@ -34,11 +34,11 @@
     "interval": 2
   },
   "custom/updates_icon": {
-    "format": " ",
+    "format": "<span color=\"#89b4fa\"></span>",
     "tooltip": false
   },
   "custom/updates_count": {
-    "format": "{}",
+    "format": "<span color=\"#cdd6f4\">{}</span>",
     "exec": "checkupdates | wc -l",
     "exec-if": "which checkupdates",
     "interval": 15,
